@@ -1,0 +1,29 @@
+{
+    "name": "carlagouveia/bitset-php",
+    "description": "bitset-php is a reimplementation of std::bitset that allows PHP to interface with C++.",
+    "keywords": ["bitset", "cpp"],
+    "homepage": "https://github.com/carlagouveia/bitset-php",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cpp\\Std\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Carla Gouveia",
+            "email": "contact@carlagouveia.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.3",
+        "friendsofphp/php-cs-fixer": "^3.34",
+        "phpstan/phpstan": "^1.10"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "static-analysis": "vendor/bin/phpstan",
+        "lint": "vendor/bin/php-cs-fixer check"
+    }
+}
