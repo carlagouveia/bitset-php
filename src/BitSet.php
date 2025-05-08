@@ -25,7 +25,7 @@ class BitSet
         $this->bits = implode($this->bitList);
     }
 
-    public static function fromString(int $bits, string $initializers = null): BitSet
+    public static function fromString(int $bits, ?string $initializers = null): BitSet
     {
         $bitSet = new BitSet($bits);
         if (!$initializers) {
